@@ -1,0 +1,66 @@
+{
+  "name": "nikolasmelui-nodejs-boilerplate",
+  "version": "4.5.0",
+  "private": true,
+  "description": "Lightweight nodejs boilerplate using eslint, prettier, lint-staged, husky and nodemon onboard.",
+  "author": {
+    "name": "nikolasmelui",
+    "email": "slak@samaradom.ru",
+    "url": "https://github.com/nikolasmelui"
+  },
+  "license": "MIT",
+  "keywords": [
+    "api",
+    "rest",
+    "http",
+    "https",
+    "node.js",
+    "nodejs",
+    "node",
+    "web",
+    "server",
+    "webserver",
+    "httpserver",
+    "boilerplate",
+    "httpsserver",
+    "nodejsserver"
+  ],
+  "main": "./src/index.js",
+  "scripts": {
+    "start": "node ./src/index.js",
+    "develop": "./node_modules/.bin/nodemon ./src/index.js",
+    "debug": "./node_modules/.bin/nodemon . --inspect ./src/index.js",
+    "eslint": "./node_modules/.bin/eslint ./src/ --max-warnings=0",
+    "eslint:fix": "./node_modules/.bin/eslint ./src/ --fix",
+    "prettier": "./node_modules/.bin/prettier ./src/ --write",
+    "test": "node ./src/tests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NikolasMelui/nikolasmelui-nodejs-boilerplate.git"
+  },
+  "bugs": {
+    "url": "https://github.com/NikolasMelui/nikolasmelui-nodejs-boilerplate/issues"
+  },
+  "homepage": "https://github.com/nikolasmelui/nikolasmelui-nodejs-boilerplate",
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^7.15.0",
+    "eslint-config-prettier": "^7.0.0",
+    "eslint-plugin-prettier": "^3.2.0",
+    "husky": "^4.3.5",
+    "lint-staged": "^10.5.3",
+    "prettier": "^2.2.1",
+    "nodemon": "^2.0.6"
+  },
+  "eslint.packageManager": "npm",
+  "lint-staged": {
+    "*.js": [
+      "npm run eslint",
+      "npm run prettier",
+      "npm test"
+    ]
+  }
+}
