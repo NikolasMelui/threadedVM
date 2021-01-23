@@ -1,6 +1,6 @@
-# 🔥 Nikolasmelui Nodejs Boilerplate
+# 🔥 threadedVM
 
-[Nikolasmelui Nodejs Boilerplate][nikolasmelui-nodejs-boilerplate] powered by [NikolasMelui][nikolasmelui] is a lightweight nodejs boilerplate using [eslint][eslint], [prettier][prettier], [lint-staged][lint-staged], [husky][husky] and [nodemon][nodemon] onboard. Just clone it, `nmp i`, `npm start` and start to create your cool node.js application!
+Node.js VM in worker threads. Generated from [Nikolasmelui Nodejs Boilerplate][nikolasmelui-nodejs-boilerplate] powered by [NikolasMelui][nikolasmelui].
 
 ## Node.js ^14 version
 
