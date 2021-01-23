@@ -1,8 +1,8 @@
 {
-  "name": "nikolasmelui-nodejs-boilerplate",
-  "version": "4.5.0",
+  "name": "threadedvm",
+  "version": "0.0.1",
   "private": true,
-  "description": "Lightweight nodejs boilerplate using eslint, prettier, lint-staged, husky and nodemon onboard.",
+  "description": "Node.js VM in worker threads.",
   "author": {
     "name": "nikolasmelui",
     "email": "slak@samaradom.ru",
@@ -18,6 +18,14 @@
     "nodejs",
     "node",
     "web",
+    "vm",
+    "virtual",
+    "virtualmachine",
+    "thread",
+    "threads",
+    "worker",
+    "workers",
+    "workerthreads",
     "server",
     "webserver",
     "httpserver",
@@ -37,23 +45,23 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/NikolasMelui/nikolasmelui-nodejs-boilerplate.git"
+    "url": "git+https://github.com/NikolasMelui/threadedVM.git"
   },
   "bugs": {
-    "url": "https://github.com/NikolasMelui/nikolasmelui-nodejs-boilerplate/issues"
+    "url": "https://github.com/NikolasMelui/threadedVM/issues"
   },
-  "homepage": "https://github.com/nikolasmelui/nikolasmelui-nodejs-boilerplate",
+  "homepage": "https://github.com/nikolasmelui/threadedVM",
   "engines": {
     "node": ">=14.0.0"
   },
   "devDependencies": {
-    "eslint": "^7.15.0",
-    "eslint-config-prettier": "^7.0.0",
-    "eslint-plugin-prettier": "^3.2.0",
-    "husky": "^4.3.5",
+    "eslint": "^7.18.0",
+    "eslint-config-prettier": "^7.2.0",
+    "eslint-plugin-prettier": "^3.3.1",
+    "husky": "^4.3.8",
     "lint-staged": "^10.5.3",
     "prettier": "^2.2.1",
-    "nodemon": "^2.0.6"
+    "nodemon": "^2.0.7"
   },
   "eslint.packageManager": "npm",
   "lint-staged": {
