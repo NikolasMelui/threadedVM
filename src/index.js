@@ -1,7 +1,11 @@
 'use strict';
 
-const { EMPTY_CONTEXT } = require('./vm');
+const { readScript, SPECIAL_CONTEXT } = require('./vm');
 
 (async () => {
-  console.info(EMPTY_CONTEXT);
+  try {
+    await readScript('first', { context: SPECIAL_CONTEXT });
+  } catch (error) {
+    console.error(error);
+  }
 })();
